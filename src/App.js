@@ -19,7 +19,7 @@ function App() {
       })
       const resized =faceapi.resizeResults(detections,{
         width:"940",
-        height:"650"
+        height:"650",
       })
       faceapi.draw.drawDetections(canvasRef.current,resized)
       faceapi.draw.drawFaceExpressions(canvasRef.current,resized)
